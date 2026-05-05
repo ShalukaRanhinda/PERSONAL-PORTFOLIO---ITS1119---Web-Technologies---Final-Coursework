@@ -1176,7 +1176,7 @@ nav ul li a:hover:after {
     opacity: 1;
 }
 
-/* Mosaic pattern */
+
 .gallery-item.wide {
     grid-column: span 2;
 }
@@ -1507,7 +1507,7 @@ nav ul li a:hover:after {
 }
 
 
-/* ===== HAMBURGER MENU ===== */
+/*  HAMBURGER MENU  */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -1537,7 +1537,7 @@ nav ul li a:hover:after {
     transform: rotate(-45deg) translate(5px, -6px);
 }
 
-/* ===== ACTIVE NAV LINK ===== */
+/*  ACTIVE NAV LINK  */
 nav ul li a.active-link {
     color: #ff9200;
 }
@@ -1546,7 +1546,7 @@ nav ul li a.active-link::after {
     width: 100%;
 }
 
-/* ===== MOBILE RESPONSIVE NAV ===== */
+/*  MOBILE RESPONSIVE NAV  */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -1644,7 +1644,7 @@ nav ul li a.active-link::after {
     }
 }
 
-/* ===== LIGHTBOX MODAL ===== */
+/*  LIGHTBOX MODAL  */
 .lightbox {
     display: none;
     position: fixed;

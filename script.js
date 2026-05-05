@@ -1,4 +1,4 @@
-// ===== MOBILE NAVBAR TOGGLE =====
+//  MOBILE NAVBAR TOGGLE 
 function toggleMenu() {
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
@@ -13,7 +13,7 @@ function closeMenu() {
     hamburger.classList.remove('active');
 }
 
-// ===== SMOOTH SCROLL FOR NAV LINKS =====
+//  SMOOTH SCROLL FOR NAV LINKS 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -27,7 +27,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ===== ACTIVE NAV LINK ON SCROLL =====
+//  ACTIVE NAV LINK ON SCROLL
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav ul li a');
@@ -56,7 +56,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===== CLOSE MENU WHEN CLICKING OUTSIDE =====
+//  CLOSE MENU WHEN CLICKING OUTSIDE 
 document.addEventListener('click', (e) => {
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
@@ -67,14 +67,14 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// ===== LIGHTBOX FUNCTIONALITY =====
+//  LIGHTBOX FUNCTIONALITY
 function openLightbox(imgSrc) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     
     lightboxImg.src = imgSrc;
     lightbox.style.display = 'flex';
-    // Use timeout to allow display:flex to apply before adding opacity class
+    // Use timeout to allow display
     setTimeout(() => {
         lightbox.classList.add('show');
     }, 10);
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const galleryItems = document.querySelectorAll('.gallery-item img');
     galleryItems.forEach(img => {
         img.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent immediate closing
+            e.stopPropagation(); 
             openLightbox(e.target.src);
         });
     });
